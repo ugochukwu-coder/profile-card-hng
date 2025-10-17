@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Nunito:wght@200;400;700&family=Roboto&display=swap');
+
+
+/* GENERAL STYLING */
+
+:root{
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: 'Roboto Slab', serif;
+
+  --color-primary: #eb2f64;
+  --color-primary-dark: #BA265D; 
+  --color-nevy-blue: #1A1B21;
+  --color--dark-blue: #161619;
+
+  /* margin */
+  --margin-bt: 1.5em;
+  
+
+  /* font-weight */
+  --bold--font: bold;
+
+  /* font size */
+  --font-size-1: 2rem;
+  --font-size-2: 2.5rem;
+  --font-size-bg: 3rem
+   
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: var(--ff-primary);
+  color: #ffffff;
+}
+
+
+
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--color--dark-blue);
+  padding: 5em 5em 2em 5em;
+  
+}
+
+.sub__container{
+  background-color:var(--color-nevy-blue);
+  z-index: 1000;
+  padding: 4em;
+  border-radius: 10px;
+  display: flex;
+  gap: 5rem;
+
+}
+
+.image__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__picture{
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.user__name{
+  font-size: var(--font-size-bg);
+  font-weight: var(--bold--font);
+  margin-bottom: var(--margin-bt);
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: var(--color-primary);
+   background-color: var(--color--dark-blue);
+}
+
+/* MAIN SECTION */
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.full__name,
+.job__title,
+.short__bio,
+.current__location{
+  margin-bottom: var(--margin-bt);
+  font-weight: var(--bold--font);
+}
+
+.full__name{
+  font-size: var(--font-size-bg);
+  padding: .5em .8em;
+  background-color:red;
+  border-radius: 5px;
+}
+
+.short__bio{
+  font-weight: 400;
+  font-size: var(--font-size-1)
+}
+
+.current__location{
+  font-size: var(--font-size-2);
+}
+
+.hobbies, .dislikes{
+  font-size: var(--font-size-1);
+  margin-bottom: var(--margin-bt);
+}
+
+.hobbies_list li, .dislikes_list li{
+  margin-bottom: .5em;
+  list-style: none;
+}
+
+.extra_curriculum{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* spacing between items */
+  flex-wrap: wrap; /* allow wrapping on smaller widths */
+  width: 100%;
+}
+
+.extra_curriculum section {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  color: var(--color--dark-blue);;
+}
+
+.extra_heading{
+    font-size: 2rem; 
+     color: var(--color-primary);
+}
+
+.social_list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--margin-bt);
+}
+
+.social-list__item{
+  list-style: none;
+
+}
+
+
+.social{
+  color: red;
+  transition: all .2s;
+  font-size: var(--font-size-bg);
+  margin-right: var(--margin-bt);
+}
+
+/* hover */
+.social:hover{
+  color: rgb(171, 40, 40);
+}
+
+/* Focus (keyboard navigation) */
+.social-list__link:focus-visible {
+  outline: 3px solid #0077b5; /* bright border */
+  outline-offset: 4px;
+  border-radius: 50%;
+  color: #0077b5;
+  transform: scale(1.1);
+}
+
+.time{
+  text-align: right;
+  font-size: 3rem;
+  padding: 10px;
+  background-color: #BA265D;
+}
+
+@media (max-width: 900px) {
+  .sub__container{
+    flex-direction:column;
+    align-items: center;
+    padding: 5em;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .extra_curriculum {
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center horizontally */
+    text-align: center;     /* center text */
+  }
+
+  .extra_curriculum section {
+    width: 90%;             /* optional: limit width for nice spacing */
+  }
+}
+
+@media (max-width: 500px) {
+  .container{
+  padding: 0;
+  }
+  .sub__container{
+    flex-direction:column;
+    padding: 5em;
+  }
+
+  .figure{
+    text-align: center;
+  }
+
+  .social{
+    margin-right: 1.2em;
+  }
+
+  .full__name{
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+
+  .job__title,
+  .current__location{
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  .email__address{
+    font-size: 1.8rem;
+  }
+
+
+  .job__title,
+  .short__bio,
+  .current__location{
+    margin-bottom:1.5em;
+  }
+
+  /* Stack extra curriculum items on very small screens */
+  
+}
+
