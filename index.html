@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Profile Card</title>
+  <script defer src="script.js"></script>
+</head>
+<body>
+     <!-- NAVBAR -->
+      
+    <nav class="navbar">
+      <div class="nav__container">
+        <a href="index.html" class="nav__logo" data-testid="test-nav-logo">MyProfile</a>
+
+        <!-- Hamburger icon for mobile -->
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav__links">
+          <li><a href="about.html" data-testid="test-nav-about">About</a></li>
+          <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <article class="container" data-testid="test-profile-card">
+      <div class="sub__container">
+
+          <!-- avater -->
+          <figure class="image__container">
+              <img src="image/ugo-w233_h238.jpg" alt="ugochukwu's profile picture" data-testid="test-user-avatar" class="profile__picture">
+              <figcaption class="sr-only">profile picture</figcaption>
+          </figure>
+
+          <div class="divider">
+              <!-- user name -->
+      
+                <h2 class="user__name" aria-label="User name" data-testid="test-user-name">Ugochukwu Okereafor</h2>
+              
+              
+              <!-- main -->
+              <main> 
+               
+                <p class="short__bio" data-testid="test-user-bio">
+                  I am frontend Developer with foundation in HTML, CSS, JavaScript,
+                  and experience working with frontend library like React. Familiar with version
+                  control systems such as Github, developing user-friendly applications,
+                  and growing as a developer by contributing to real-world projects.
+                  With experience in building dynamic, scalable and responsive web applications.
+                  Passionate about writting  clean, maintainable code and staying current with
+                  emerging technologies in the React ecosystem.
+                </p>
+
+                <div class="extra_curriculum">
+                  <!-- Hobbies -->
+                  <section class="hobbies">
+                    <h3 class="extra_heading">Hobbies</h3>
+                    <ul class="hobbies_list" data-testid="test-user-hobbies">
+                      <li>Coding</li>
+                      <li>Photography</li>
+                      <li>Traveling</li>
+                    </ul>
+                  </section>
+
+                  <!-- Dislikes -->
+                  <section class="dislikes">
+                    <h3 class="extra_heading">Dislikes</h3>
+                    <ul class="dislikes_list" data-testid="test-user-dislikes">
+                      <li>Procrastination</li>
+                      <li>Unresponsive websites</li>
+                    </ul>
+                  </section>
+                </div>
+              </main>
+
+          
+            
+              <ul class="social_list" data-testid="test-user-social-links">
+                  <li class="social-list__item">
+                      <a class="social-list__link" data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/ugochukwu-okereafor-b346a9296" target="_blank">
+                          <i class="fab fa-linkedin social"></i>
+                      </a>
+                  </li>
+                
+                  <li class="social-list__item">
+                      <a class="social-list__link" data-testid="test-user-social-twitter" href="https://x.com/gentle3628?t=abBxrWZApsQmLQNE0ZthgQ&s=09" target="_blank">
+                          <i class="fab fa-twitter social"></i>
+                      </a>
+                  </li>
+                  <li class="social-list__item">
+                      <a class="social-list__link" data-testid="test-user-social-github" href="https://github.com/ugochukwu-coder" target="_blank">
+                          <i class="fab fa-github social"></i>
+                      </a>
+                  </li>
+              </ul>
+        </div>
+      </div>
+        <footer class="footer"></footer>
+          <p class="time" id="time" data-testid="test-user-time"></p>
+        </footer>
+    </article>
+
+    <!-- <Script src="script.js"></Script> -->
+</body>
+</html>

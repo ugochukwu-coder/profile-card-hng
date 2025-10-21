@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="nav__container">
+        <a href="index.html" class="nav__logo" data-testid="test-nav-logo">MyProfile</a>
+
+        <!-- Hamburger icon for mobile -->
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav__links">
+          <li><a href="index.html" data-testid="test-nav-about">Home</a></li>
+          <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+
+  <main class="about" data-testid="test-about-page">
+    <h1 class="about__title">About Me</h1>
+
+    <section class="about__section about__bio" data-testid="test-about-bio">
+      <h2 class="about__heading">My Bio</h2>
+      <p class="about__text">
+        Hello! I'm a passionate learner exploring web development and creative design. I love bringing ideas to life using code and design principles.
+      </p>
+    </section>
+
+    <section class="about__section about__goals" data-testid="test-about-goals">
+      <h2 class="about__heading">Goals in This Program</h2>
+      <ul class="about__list">
+        <li>Master responsive web design and accessibility.</li>
+        <li>Learn how to build full-stack web applications.</li>
+        <li>Collaborate effectively on real-world projects.</li>
+      </ul>
+    </section>
+
+    <section class="about__section about__confidence" data-testid="test-about-confidence">
+      <h2 class="about__heading">Areas of Low Confidence</h2>
+      <p class="about__text">
+        I sometimes struggle with debugging complex JavaScript code, but I'm committed to improving through practice and problem-solving.
+      </p>
+    </section>
+
+    <section class="about__section about__future" data-testid="test-about-future-note">
+      <h2 class="about__heading">Note to My Future Self</h2>
+      <p class="about__text">
+        Keep learning, stay humble, and remember that consistency always beats motivation. Celebrate small wins and keep pushing forward.
+      </p>
+    </section>
+
+    <section class="about__section about__extra" data-testid="test-about-extra">
+      <h2 class="about__heading">Extra Thoughts</h2>
+      <p class="about__text">
+        I believe creativity and empathy are key to building digital experiences that truly help people. Every project is a new opportunity to grow.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

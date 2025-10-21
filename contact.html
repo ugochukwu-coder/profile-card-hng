@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="contact-page">
+
+    <!-- NAVBAR (includes Home link) -->
+  <nav class="navbar">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo" data-testid="test-nav-logo">MyProfile</a>
+
+      <!-- Hamburger icon for mobile -->
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="index.html" data-testid="test-nav-about">Home</a></li>
+        <li><a href="about.html" data-testid="test-nav-contact">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+   <!-- CONTACT FORM -->
+  <main class="contact__main">
+    <h1>Contact Us</h1>
+
+    <form id="contactForm" novalidate>
+      <!-- Full Name -->
+      <label for="name">Full Name</label>
+      <input type="text"
+        id="name" name="name"
+        data-testid="test-contact-name"
+        aria-describedby="test-contact-error-name" 
+        required />
+      <p class="error" id="test-contact-error-name" aria-live="polite"></p>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" 
+        id="email" name="email" 
+        data-testid="test-contact-email"
+        aria-describedby="test-contact-error-email" 
+        required />
+      <p class="error" id="test-contact-error-email" aria-live="polite"></p>
+
+      <!-- Subject -->
+      <label for="subject">Subject</label>
+      <input type="text" 
+        id="subject" 
+        name="subject" 
+        data-testid="test-contact-subject"
+        aria-describedby="test-contact-error-subject" 
+        required />
+      <p class="error" id="test-contact-error-subject" aria-live="polite"></p>
+
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" 
+        name="message" 
+        data-testid="test-contact-message" 
+        aria-describedby="test-contact-error-message"
+        required></textarea>
+      <p class="error" id="test-contact-error-message" aria-live="polite"></p>
+
+      <!-- Submit -->
+      <button type="submit" 
+      data-testid="test-contact-submit"
+      aria-label="Submit contact form"
+      >
+      Send Message
+    </button>
+
+      <!-- Success message -->
+      <p id="test-contact-success" data-testid="test-contact-success" class="success" aria-live="polite"></p>
+    </form>
+  </main>
+
+</body>
+</html>
